@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Builds a release as a .zip file for upload to the Chrome Web Store
+
+out="netflix_auto_mute.zip"
+rm "$out"
+zip "$out" LICENSE manifest.json *.js *.html icon/*.png

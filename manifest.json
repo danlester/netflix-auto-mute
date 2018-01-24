@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "Netflix Auto Mute",
+	"short_name": "Netflix Auto Mute",
+	"description": "Mutes Netflix's annoying autoplay trailers, but not films you actually choose to watch!",
+	"author": "Dan Lester",
+	"version": "1.0.0",
+	"minimum_chrome_version": "55",
+	"background": {
+		"scripts": ["mute_tabs.js"],
+		"persistent": true
+	},
+	"browser_action": {
+		"default_icon": "icon/NetflixAutoMute.png"
+	},
+	"icons": {
+		"128": "icon/NetflixAutoMute.png"
+	},
+
+	"permissions": [
+		"tabs"
+	]
+}
